@@ -104,4 +104,4 @@ Thailand:
 Krap, Sawadi, with student number 1999-890, is a sorcerer. His phone number is 66-8-1234567
 ```
 
-> After printing the student entries, go back to the "main menu".
+
