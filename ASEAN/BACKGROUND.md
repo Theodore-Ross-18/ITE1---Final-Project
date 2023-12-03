@@ -1,6 +1,6 @@
 # ***Background***
 
-> `Southeast Asia has 11 countries. If you have a classmate or schoolmate from this area, and you want to contact him/her, you can make an international call. Typically, to make that call, the country code has first to be dialed before the telephone number. Take note of the following ASEAN countries with their corresponding country codes (for the purposes of this assignment, let's limit to 5 ASEAN countries only)`
+> Southeast Asia has 11 countries. If you have a classmate or schoolmate from this area, and you want to contact him/her, you can make an international call. Typically, to make that call, the country code has first to be dialed before the telephone number. Take note of the following ASEAN countries with their corresponding country codes (for the purposes of this assignment, let's limit to 5 ASEAN countries only)
 
 | `ASEAN Country` | `Country Code`    |
 | :---:   | :---: |
