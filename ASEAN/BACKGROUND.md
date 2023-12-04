@@ -34,6 +34,7 @@ Enter surname: Lee
 Enter first name: Sukarno
 Enter occupation: Doctor
 Enter gender (M for male, F for female): M
+Enter country code: 63
 Enter area code: 2
 Enter number: 4567890
 Do you want to enter another entry [Y/N]? N
