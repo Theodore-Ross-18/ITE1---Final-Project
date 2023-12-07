@@ -24,7 +24,7 @@ public class Program
                     // Adding: Students to the Phonebook
                     while (true)
                     {
-                        Console.Write("\nEnter Number: ");
+                        Console.Write("\nEnter Student Number: ");
                         string studentNumber = Console.ReadLine();
 
                         Console.Write("Enter Surname: ");
@@ -55,6 +55,15 @@ public class Program
                             Console.WriteLine("Invalid gender input. Using default gender.");
                             gender = Gender.MALE;
                         }
+
+                        Console.Write("Enter Country Code: ");
+                        string countryCode = Console.ReadLine();
+
+                        Console.Write("Enter Area Code: ");
+                        string areaCode = Console.ReadLine();
+
+                        Console.Write("Enter Number: ");
+                        string phoneNumber = Console.ReadLine();
 
                     }
             }
