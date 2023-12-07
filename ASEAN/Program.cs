@@ -102,6 +102,18 @@ public class Program
                     {
                         Console.WriteLine($"\nHere is the existing information about {studentNumberToEdit}: \n");
                         Console.WriteLine(foundStudent.DisplayInfo());
+
+                        // Entering: The Edit Menu
+                        while (true)
+                        {
+                            Console.WriteLine("\nEDIT MENU");
+                            Console.WriteLine("[1] Student number\n[2] Surname\n[3] First Name\n[4] Gender\n[5] Occupation\n" +
+                                              "[6] Country code\n[7] Area code\n[8] Phone number\n[9] None - Go back to the main menu");
+
+                            Console.Write("\nEnter Choice: ");
+                            string editChoice = Console.ReadLine();          
+                        }
+
                     }
             }
 
