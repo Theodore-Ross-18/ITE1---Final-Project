@@ -227,3 +227,17 @@ public enum Gender
     FEMALE
 }
 
+// Class: Individual Student
+public class Student
+{
+    // Properties: Student Information
+    public string StudentNumber { get; set; }
+    public string Surname { get; set; }
+    public string FirstName { get; set; }
+    public string Occupation { get; set; }
+    public Gender Gender { get; set; }
+    public string CountryCode { get; set; }
+    public string AreaCode { get; set; }
+    public string PhoneNumber { get; set; }
+
+}
