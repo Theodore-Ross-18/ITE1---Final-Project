@@ -65,6 +65,21 @@ public class Program
                         Console.Write("Enter Number: ");
                         string phoneNumber = Console.ReadLine();
 
+                        // Creating: New Student & Adding it to the Phonebook
+                        Student student = new Student
+                        {
+                            StudentNumber = studentNumber,
+                            Surname = surname,
+                            FirstName = firstName,
+                            Occupation = occupation,
+                            Gender = gender,
+                            countryCode = countryCode,
+                            AreaCode = areaCode,
+                            PhoneNumber = phoneNumber
+                        };
+
+                        aseanPhonebook.AddStudent(student);
+
                     }
             }
 
