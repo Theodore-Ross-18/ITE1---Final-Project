@@ -90,6 +90,19 @@ public class Program
                     }
                     // Case 1: End
                     break;
+
+                case "2":
+                    // Editing: Student Information
+                    Console.Write("\nEnter Student Number: ");
+                    string studentNumberToEdit = Console.ReadLine();
+
+                    Student foundStudent = aseanPhonebook.Students.Find(student => student.StudentNumber == studentNumberToEdit);
+
+                    if (foundStudent != null)
+                    {
+                        Console.WriteLine($"\nHere is the existing information about {studentNumberToEdit}: \n");
+                        Console.WriteLine(foundStudent.DisplayInfo());
+                    }
             }
 
         }
