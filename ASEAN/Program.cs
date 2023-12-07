@@ -211,11 +211,11 @@ public class Program
                     Environment.Exit(0);
                     break;
 
+                default:
+                    // Handling: Invalid Options in the Main Menu
+                    Console.WriteLine("\nInvalid option. Please try again.");
+                    break;
             }
-
         }
-
-
     }
-
 }
