@@ -240,4 +240,9 @@ public class Student
     public string AreaCode { get; set; }
     public string PhoneNumber { get; set; }
 
-}
+    // Method: Display Student Information
+    public string DisplayInfo()
+    {
+        return $"{Surname}, {FirstName}, with student number {StudentNumber}, is a {Occupation}. " +
+               $"His phone number is {AreaCode}-{PhoneNumber}";
+    }
