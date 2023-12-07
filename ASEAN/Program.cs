@@ -219,3 +219,11 @@ public class Program
         }
     }
 }
+
+// Enumeration: Gender of a Student
+public enum Gender
+{
+    MALE,
+    FEMALE
+}
+
