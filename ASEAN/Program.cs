@@ -122,12 +122,83 @@ public class Program
                             // Inner Switch: Edit Choices
                             switch (editChoice)
                             {
-                                
+                                case "1":
+                                    // Editing: Student Number
+                                    Console.Write("\nEnter a New Student Number: ");
+                                    foundStudent.StudentNumber = Console.ReadLine();
+                                    break;
+
+                                case "2":
+                                    // Editing: Surname
+                                    Console.Write("\nEnter a New Surname: ");
+                                    foundStudent.Surname = Console.ReadLine();
+                                    break;
+
+                                case "3":
+                                    // Editing: First Name
+                                    Console.Write("\nEnter a New First Name: ");
+                                    foundStudent.FirstName = Console.ReadLine();
+                                    break;
+
+                                case "4":
+                                    // Editing: Gender
+                                    Console.Write("\nEnter a New Gender (M for male, F for female): ");
+                                    string newGenderInput = Console.ReadLine().ToUpper();
+
+                                    Gender newGender;
+                                    if (newGenderInput == "M" || newGenderInput == "m")
+                                    {
+                                        newGender = Gender.MALE;
+                                    }
+                                    else if (newGenderInput == "F" || newGenderInput == "f")
+                                    {
+                                        newGender = Gender.FEMALE;
+                                    }
+                                    else
+                                    {
+                                        // Handling: Invalid Gender Input
+                                        Console.WriteLine("Invalid gender input. Using default value.");
+                                        newGender = Gender.MALE; // You can set a default value or handle it according to your requirements
+                                    }
+
+                                    foundStudent.Gender = newGender;
+                                    break;
+
+                                case "5":
+                                    // Editing: Occupation
+                                    Console.Write("\nEnter a New Occupation: ");
+                                    foundStudent.Occupation = Console.ReadLine();
+                                    break;     
+
+                                case "6":
+                                    // Editing: Country Code
+                                    Console.Write("\nEnter a New Country Code: ");
+                                    foundStudent.CountryCode = Console.ReadLine();
+                                    break;
+
+                                case "7":
+                                    // Editing: Area Code
+                                    Console.Write("\nEnter a New Area Code: ");
+                                    foundStudent.AreaCode = Console.ReadLine();
+                                    break;
+
+                                 case "8":
+                                    // Editing: Phone Number
+                                    Console.Write("\nEnter a New Phone Number: ");
+                                    foundStudent.PhoneNumber = Console.ReadLine();
+                                    break;
                             }
 
+                             // Display: Updated Student Information
+                            Console.WriteLine(foundStudent.DisplayInfo());
                         }
 
+                    } else {
+
+                        // Display: Message if the Student is not Found
+                        Console.WriteLine($"Student with number {studentNumberToEdit} not found.");
                     }
+                    break;
             }
 
         }
