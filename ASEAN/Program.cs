@@ -246,3 +246,4 @@ public class Student
         return $"{Surname}, {FirstName}, with student number {StudentNumber}, is a {Occupation}. " +
                $"His phone number is {AreaCode}-{PhoneNumber}";
     }
+}
