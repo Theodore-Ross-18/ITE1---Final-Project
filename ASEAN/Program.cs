@@ -199,6 +199,12 @@ public class Program
                         Console.WriteLine($"Student with number {studentNumberToEdit} not found.");
                     }
                     break;
+
+                case "3":
+                    // Searching: Students by Country
+                    aseanPhonebook.SearchByCountry();
+                    break;
+
             }
 
         }
