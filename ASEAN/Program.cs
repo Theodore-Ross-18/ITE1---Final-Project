@@ -205,6 +205,12 @@ public class Program
                     aseanPhonebook.SearchByCountry();
                     break;
 
+                case "4":
+                    // Exiting: Program
+                    Console.WriteLine("\nExiting the program...");
+                    Environment.Exit(0);
+                    break;
+
             }
 
         }
