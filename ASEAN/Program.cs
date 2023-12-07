@@ -40,6 +40,21 @@ public class Program
                         string genderInput = Console.ReadLin().ToUpper();
 
                         // Conditional: Gender Input
+                        genderInput gender;
+                        if (genderInput == "M") {
+
+                            gender = Gender.MALE;
+
+                        } else if (genderInput == "F") {
+
+                            gender = Gender.FEMALE;
+
+                        } else {
+
+                            // HandlingL Invalid Gender Input (Default)
+                            Console.WriteLine("Invalid gender input. Using default gender.");
+                            gender = Gender.MALE;
+                        }
 
                     }
             }
