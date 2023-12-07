@@ -111,7 +111,20 @@ public class Program
                                               "[6] Country code\n[7] Area code\n[8] Phone number\n[9] None - Go back to the main menu");
 
                             Console.Write("\nEnter Choice: ");
-                            string editChoice = Console.ReadLine();          
+                            string editChoice = Console.ReadLine(); 
+
+                            // Handling: User Choices (Edit Menu)
+                            if (editChoice == "9")
+                            {
+                                break;
+                            }
+
+                            // Inner Switch: Edit Choices
+                            switch (editChoice)
+                            {
+                                
+                            }
+
                         }
 
                     }
