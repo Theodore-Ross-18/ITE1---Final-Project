@@ -80,7 +80,15 @@ public class Program
 
                         aseanPhonebook.AddStudent(student);
 
+                        Console.Write("\nDo you want to enter another entry [Y/N]? ");
+                        string anotherEntry = Console.ReadLine().ToUpper();
+
+                        if (anotherEntry != "Y")
+                        {
+                            break;
+                        }
                     }
+                    break;
             }
 
         }
