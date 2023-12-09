@@ -1,4 +1,4 @@
-﻿// Main: Program Class
+// Main: Program Class
 // Theodore Ross and Ivern Buala
 // IT Elective 1 - FINAL DRILL
 
