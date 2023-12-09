@@ -242,5 +242,19 @@ public class Student
 
 public class ASEANPhonebook
 {
+    // Getter Setter
+    public List<Student> Students { get; private set; }
+
+    // Constructor: Initialize Phonebook
+    public ASEANPhonebook()
+    {
+        Students = new List<Student>();
+    }
+
+    // Method: Add a Student to the Phonebook
+    public void AddStudent(Student student)
+    {
+        Students.Add(student);
+    }
 
 }
