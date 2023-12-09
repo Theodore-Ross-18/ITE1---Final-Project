@@ -257,4 +257,9 @@ public class ASEANPhonebook
         Students.Add(student);
     }
 
+    public void SearchByCountry() // Pause due to solar panel power interruption
+    {
+        // to be continued by ivern
+    }
+
 }
