@@ -220,7 +220,7 @@ public enum Gender
 // Class: Individual Student
 public class Student
 {
-    // Properties: Student Information
+    // Properties: Student Information (Getter Setter)
     public string StudentNumber { get; set; }
     public string Surname { get; set; }
     public string FirstName { get; set; }
@@ -282,9 +282,39 @@ public class ASEANPhonebook
             Console.Write("\nEnter Choice: ");
             string countryChoice = Console.ReadLine();
 
+            // Country choice (0)
+            if (countryChoice == "0")
+            {
+                // Exiting: Search if no Countries Selected
+                if (selectedCountries.Count == 0)
+                {
+                    Console.WriteLine("No countries selected. Exiting search.");
+                    break;
+                }
 
+                // Iteration: Through Selected Countries & Displaying Student Information
+                foreach (string countryCode in selectedCountries)
+                {
+                    string countryName = countryCodes.Keys.ElementAt(int.Parse(countryCode) - 1);
+                    List<Student> matchingStudents = Students.FindAll(student => student.CountryCode == countryCodes[countryName]);
+
+                    if (matchingStudents.Count > 0) // Students from countryName will print if matchingStudents is greater than 0 + with the student info
+                    {
+                        Console.WriteLine($"\nStudents from {countryName}:\n");
+                        foreach (Student student in matchingStudents)
+                        {
+                            Console.WriteLine($"{student.DisplayInfo()}\n");
+                        }
+                    }
+                    else
+                    {
+                        Console.WriteLine($"\nNo students from {countryName}");
+                    }
+                }
+
+                break; // break part
+            }
         }
-
     }
-
+    
 }
