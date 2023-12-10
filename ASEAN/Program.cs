@@ -282,7 +282,7 @@ public class ASEANPhonebook
             Console.Write("\nEnter Choice: ");
             string countryChoice = Console.ReadLine();
 
-            // Country choice (0)
+            // If user selected "0" "in countryChoice
             if (countryChoice == "0")
             {
                 // Exiting: Search if no Countries Selected
@@ -314,6 +314,26 @@ public class ASEANPhonebook
 
                 break; // break part
             }
+
+            // If user selected "6" "in countryChoice
+            else if (countryChoice == "6")
+            {
+                // Display: All Students if the User Chooses 'ALL'
+                if (Students.Count == 0 || Students.TrueForAll(student => string.IsNullOrEmpty(student.DisplayInfo())));
+                {
+                    Console.WriteLine("No student information available.");
+                }
+                
+                else
+                {
+                    foreach (Student student in Students)
+                    {
+                        Console.WriteLine(student.DisplayInfo()); // prints out all students registered in the ASEAN phonebook
+                    }
+                }
+            }
+
+
         }
     }
     
