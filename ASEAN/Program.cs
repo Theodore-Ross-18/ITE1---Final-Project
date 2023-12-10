@@ -272,6 +272,19 @@ public class ASEANPhonebook
         // List: Store Selected Countries for Search
         List<string> selectedCountries = new();
 
+        // While Loop: for Searchng Country
+        while(true)
+        {
+            // Select Country
+            Console.WriteLine("\nFROM WHICH COUNTRY:");
+            Console.WriteLine("[1] Philippines\n[2] Thailand\n[3] Singapore\n[4] Indonesia\n[5] Malaysia\n[6] ALL\n[0] Done and Search\n");
+
+            Console.Write("\nEnter Choice: ");
+            string countryChoice = Console.ReadLine();
+
+
+        }
+
     }
 
 }
