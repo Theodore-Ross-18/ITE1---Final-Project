@@ -319,7 +319,7 @@ public class ASEANPhonebook
             else if (countryChoice == "6")
             {
                 // Display: All Students if the User Chooses 'ALL'
-                if (Students.Count == 0 || Students.TrueForAll(student => string.IsNullOrEmpty(student.DisplayInfo())));
+                if (Students.Count == 0 || Students.TrueForAll(student => string.IsNullOrEmpty(student.DisplayInfo())))
                 {
                     Console.WriteLine("No student information available.");
                 }
@@ -331,6 +331,12 @@ public class ASEANPhonebook
                         Console.WriteLine(student.DisplayInfo()); // prints out all students registered in the ASEAN phonebook
                     }
                 }
+            }
+
+            else if (countryChoice == "1" || countryChoice == "2" || countryChoice == "3" || countryChoice == "4" || countryChoice == "5")
+            {
+                // Adding: Selected any Countries to the List and prints out info of a student/s in a specific country
+                selectedCountries.Add(countryChoice);
             }
 
 
