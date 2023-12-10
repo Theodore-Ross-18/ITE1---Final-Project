@@ -339,6 +339,11 @@ public class ASEANPhonebook
                 selectedCountries.Add(countryChoice);
             }
 
+            else
+            {
+                // Handling: Invalid Choices
+                Console.WriteLine("Invalid choice or keyword, please try again!");
+            }
 
         }
     }
