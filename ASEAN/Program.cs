@@ -28,12 +28,16 @@ public class Program
                     {
                         Console.Write("\nEnter Number: ");
                         string studentNumber = Console.ReadLine();
+
                         Console.Write("Enter Surname: ");
                         string surname = Console.ReadLine();
+
                         Console.Write("Enter First Name: ");
                         string firstName = Console.ReadLine();
+
                         Console.Write("Enter Occupation: ");
                         string occupation = Console.ReadLine();
+                        
                         Console.Write("Enter Gender (M for male, F for female): ");
                         string genderInput = Console.ReadLine().ToUpper();
 
@@ -230,7 +234,7 @@ public class Student
     public string AreaCode { get; set; }
     public string PhoneNumber { get; set; }
 
-    // Method: Display Student Information
+    // Student Information: Printed output info part
     public string DisplayInfo()
     {
         return $"{Surname}, {FirstName}, with student number {StudentNumber}, is a {Occupation}. " +
@@ -260,7 +264,7 @@ public class ASEANPhonebook
     public void SearchByCountry()
     {
         // Dictionary: Country Codes
-        Dictionary<string, string> countryCodes = new Dictionary<string, string>
+        Dictionary<string, string> countryCodes = new()
         {
             {"Philippines", "63"},
             {"Thailand", "66"},
