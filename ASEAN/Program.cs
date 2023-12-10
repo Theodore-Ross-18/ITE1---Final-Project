@@ -257,9 +257,21 @@ public class ASEANPhonebook
         Students.Add(student);
     }
 
-    public void SearchByCountry() // Pause due to solar panel power interruption
+    public void SearchByCountry()
     {
-        // to be continued by ivern
+        // Dictionary: Country Codes
+        Dictionary<string, string> countryCodes = new Dictionary<string, string>
+        {
+            {"Philippines", "63"},
+            {"Thailand", "66"},
+            {"Singapore", "65"},
+            {"Indonesia", "62"},
+            {"Malaysia", "60"}
+        };
+
+        // List: Store Selected Countries for Search
+        List<string> selectedCountries = new();
+
     }
 
 }
