@@ -276,7 +276,7 @@ public class ASEANPhonebook
         // List: Store Selected Countries for Search
         List<string> selectedCountries = new();
 
-        // While Loop: for Searchng Country
+        // While Loop: for Search in Country
         while(true)
         {
             // Select Country
