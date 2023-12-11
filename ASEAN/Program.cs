@@ -238,7 +238,7 @@ public class Student
     public string DisplayInfo()
     {
         return $"{Surname}, {FirstName}, with student number {StudentNumber}, is a {Occupation}. " +
-               $"His phone number is {AreaCode}-{PhoneNumber}";
+               $"His phone number is {CountryCode}-{PhoneNumber}";
     }
 }
 
